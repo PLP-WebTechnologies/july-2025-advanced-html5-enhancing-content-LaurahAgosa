@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Basket Grocery Shop</title>
+</head>
+<body>
+    <header>
+        <h1>Fresh Basket Grocery Shop</h1>
+        <p>Your one stop shop for fresh produce and essentials.</p>
+
+    <!---Defination List-->
+        <h2>Key Terms</h2>
+        <dl>
+            <dt>Organic: </dt>
+            <dd>Produce grown without the use of syntethic fertilisers or pesticides.</dd>
+
+            <dt>Farm-to-table: </dt>
+            <dd>Fresh  produce delivered directly from the local farm to our store.</dd>
+
+            <dt>Seasonal Specials: </dt>
+            <dd>Items that are available only during certain times of the year.</dd>
+
+            <dt>Bulk Purchase: </dt>
+            <dd>Buying large quantities of an item for discounted price.</dd>
+        </dl>
+    </header>
+    <!--Grocery Categories using lists-->
+    <main>
+        <section>
+            <h2>Our Grocery Categories</h2>
+            <ul>
+                <li>Fruits
+                    <ul>
+                        <li>Apples</li>
+                        <li>Bananas</li>
+                        <li>Oranges</li>
+                    </ul>
+                </li>
+                
+                <li>Vegetables
+                    <ul>
+                        <li>Tomatoes</li>
+                        <li>Spinach</li>
+                        <li>Potatoes</li>
+                    </ul>
+                </li>
+
+                <li>Dairy Products
+                    <ul>
+                        <li>Cheese</li>
+                        <li>Butter</li>
+                        <li>Butter Milk</li>
+                        <li>Natural Youghurt</li>
+
+                <li>Bakery Products
+                    <ul>
+                        <li>Fresh Bread</li>
+                        <li>Biscuits and Cookies</li>
+                    </ul>
+                </li>
+            </ul>
+         </section>
+         
+         <!--Price list Table-->
+         <section>
+            <h2>Price List</h2>
+            <table border ="1">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Unit</th>
+                        <th>Price (KES)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Apples</td>
+                        <td>1 Kg</td>
+                        <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Spinach</td>
+                        <td>1 Bunch</td>
+                        <td>50</td>
+                    </tr>
+
+                    <tr>
+                        <td>Milk</td>
+                        <td>1 Liter</td>
+                        <td>80</td>
+                    </tr>
+                </tbody>
+            </table>
+         </section>
+         <!--Media Section-->
+         <section>
+            <h2>Shop Gallery</h2>
+            <img src="Fresh Fruits Prduce.jpg" alt="Fresh Fruits Produce" width="400" height="300">
+            <img src="Fresh Vegetable produce.jpg" alt="Fresh vegetables Produce" width="400" height="300">
+            <img src="Mother and Daughter shopping at the grocery.jpg" alt="Mother and Daughter shopping at the 
+            grocery" width="400" height="300">
+
+            <h3>Our Promotional Video</h3>
+            <video width="640" height="360" controls>
+                <source src="Grocery Video.mp4" type="video/mp4">
+                Your browser doesn't support video playback
+            </video>
+
+            <h3>Background Music</h3>
+            <audio controls>
+                <source src="Ghibli Station - The Mini Vandals.mp3" type="audio/mp3">
+                Your browser doesn't support audio playback
+            </audio>
+         </section>
+
+         <!--HTML5 Form-->
+         <section>
+            <h2>Place your order</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="Name"> Full Name: </label>
+                    <input type="text" id="name" name="name" placeholder="e.g. Laurah Agosa Libese" [required minlength="3">
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="e.g. agosa1.l@gmail.com" required autocomplete="email">
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. 0712345678" pattern="[0-9]{10}" required>
+
+                </fieldset>
+                <br></br>
+
+                 <fieldset>
+                <legend>Order Details</legend>
+                <label for="product">Select Product:</label>
+                <select id="product" name="product" required>
+                    <option value="">-- Choose an item --</option>
+                    <option value="apples">Apples</option>
+                    <option value="spinach">Spinach</option>
+                    <option value="milk">Milk</option>
+                    <option value="cheese">Cheese</option>
+                    <option value="Biscuits and Cookies">Biscuits and Cookies</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="50" required>
+
+                <label for="instructions">Special Instructions:</label>
+                <textarea id="instructions" name="instructions" rows="4" placeholder="Any delivery notes?"></textarea>
+            </fieldset>
+            <br></br>
+
+            <fieldset>
+                <legend>Payment Method</legend>
+                <label>
+                    <input type="radio" name="payment" value="mpesa" required> M-Pesa
+                </label>
+                <label>
+                    <input type="radio" name="payment" value="cash"> Cash on Delivery
+                </label>
+            </fieldset>
+
+            <br></br>
+            <button type="submit">Submit Order</button>
+            </form>
+         </section>
+    </main>
+  
+       <br></br>
+    <footer>
+    <p>&copy; 2025 Fresh Basket Grocery Shop. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
